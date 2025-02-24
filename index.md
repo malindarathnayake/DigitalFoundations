@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Digital Foundations Course Guide
+title: Course Guide
 nav_order: 1
 description: "A comprehensive guide to understanding how computers, the internet, and email work"
 permalink: /

@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* Navigation bar controls up top */
+.nav1 {
+	width:320px;
+	position:absolute;
+	z-index:800;
+	margin:-100px 0 0 640px;
+
+}
+.nav1 ul {float:right;  margin-top: -30px; font-weight:bold; }	
+.nav1 li {display:inline; list-style:none;}
+.nav1 li a {display:block; float:left; padding:0px 5px 0px 5px; color:rgb(0,0,200) ; text-decoration:none; font-size:80%;}
+.nav1 a:hover {
+	text-decoration:none; 
+	color:rgb(225,25,25);
+	}
+
+.searchform {   width: 280px; margin:-100px 0px 0px 700px !important /*Non-IE6*/; padding:0px 0px 0px 0px /*IE6*/;} 
+
+.header-top {
+	margin: 0px 0px 0px 0px;
+}
+
+/*
+ * White Paper formatting 
+ */
+.whitePaperContent h1.block {clear:both; margin:1.0em 0 0em 0; padding:2px 0 2px 2px; background:rgb(190,190,190); font-family:"trebuchet ms",arial,sans-serif; color:rgb(255,255,255); font-weight:bold; font-size:1.8em;}
+
+.VideoSpreadSheet {
+	height: 250px;
+	width: 400px;
+	
+}
+.VideoPict {
+	height: 300px;
+	width: 400px;
+}
+
+#abstract {
+	font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.whitePaperContent ul li {
+	padding: .5em;
+}
+
+/*** Footnotes, Sources, Notes ***/
+.whitePaperContent .details {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 0.8em;
+}
+
+/*** All definitions should have a definition label and a definition word - share this across the site and blogs ***/
+.whitePaperContent p .definitionLabel {
+	font-weight: bolder;
+}
+.whitePaperContent  p .definitionWord {
+	font-style: italic;
+	font-weight: bolder;
+}
+.whitePaperContent p.figure {
+	font-weight: bolder;
+	clear: both;
+	color: #036;
+}
+
+
+#ecosystemContainer {
+	height: 768px;
+	width: 960px;
+
+	background-image:url(../white-papers/shared_images/Ecosystem.jpg)
+}
+
+#drPfooter { clear:both; text-align: center; }
+.img400 {
+	height: 200px;
+	width: 400px;
+}
+#whitePaperTitle {
+	padding-top: 0.5em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.whitePaperTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+}
+.argumentLabel {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+}
+.header-top {
+	padding-top: 0.5em;
+	padding-right: 0em;
+	padding-bottom: 2.0em;
+	padding-left: 0em;
+}
+#transitPriceTable {
+	border-top-color: #039;
+	border-top-width: thick;
+	border-right-width: thick;
+	border-bottom-width: thick;
+	border-left-width: thick;
+	border-right-color: #039;
+	border-bottom-color: #039;
+	border-left-color: #039;
+	font-family: Verdana, Geneva, sans-serif;
+	color: #939;
+}
+#transitPriceTable tr th {
+	color: #00F;
+}
+#transitPriceGraph {
+	border-top-width: 10px;
+	border-right-width: 10px;
+	border-bottom-width: 10px;
+	border-left-width: 10px;
+	border-top-color: #00F;
+	border-right-color: #00F;
+	border-bottom-color: #00F;
+	border-left-color: #00F;
+}
+#transitPriceTable tr td {
+	background-color: #CCC;
+}
+#transitPriceTable tr th em {
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: small;
+}
+#transitPriceTable tr td {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	color: #000;
+}
+#transitPriceGraph {
+	border-top-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 5px;
+	border-left-width: 5px;
+}
+.spotlight {
+	background-color: #FFF;
+	margin: 5px;
+	padding: 5px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-color: #666;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #666;
+}
+.sidebar {
+	float: right;
+	width: 44%;
+	background: #ccc;
+	margin: 5px;
+	padding: 10px;
+}
+.listLowerCaseLetters {
+	list-style-type: lower-alpha;
+}
+.BoldLeadIn {
+	font-weight: bold;
+}
+.twoColumnList {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 75em;
+	list-style-type: none;
+	margin-top: -20px;
+}
+.twoColumnList li {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 20em;
+	list-style-type: none;
+	margin-bottom: -40px;
+}
+#mainContent .figure {
+	font-weight: bold;
+	padding: 0em;
+	margin-top: -1em;
+}
+.boxed {
+	border: medium groove #066;
+	padding: 5px;
+}
+#mainContent .boxed h1, #mainContent .boxed h3, #mainContent .boxed p img {
+	text-align: center;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "Helvetica Neue", Helvetica;
+}
+.figure {
+	font-weight: bold;
+	font-size: 12px;
+	margin-top: -0.2em;
+	margin-bottom: 0.3em;
+	text-align: center;
+}
+#workshop #contactForm {
+}
+#contactUsForm {
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 5px;
+	border-left-width: 2px;
+	padding: 5px;
+}
+#whitePapersList h1 {
+	border-top:dashed #00aa00 1px;
+}#whitePaperTitle {
+	text-align: center;
+}
+#whitePaperTitle {
+	font-size: 36px;
+}
+#abstract .lastUpdated {
+	text-align: right;
+}
+.Quotation {
+	font-size: medium;
+	font-style: italic;
+	font-weight: bolder;
+	color: #00F;
+	text-align: left;
+	margin: 1em 7em 1em 7em;
+}
+.subscript {
+	vertical-align: sub;
+	font-size: smaller;
+}
+.drPform {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #EDEDED;
+	border-right-color: #EDEDED;
+	border-bottom-color: #EDEDED;
+	border-left-color: #EDEDED;
+	background-color: #0CC;
+	width: 630px;
+	margin-left: 20px;
+}
+.highlight {
+	background-color: #FF0;
+	text-align: center;
+}
+.equation {
+	margin-left: 1em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 11px;
+}
+.subscript {
+	vertical-align: sub;
+}
+.lastUpdated {
+	text-align: right;
+}
+.CenteredInTable {
+	text-align: center;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+.NotesFromTheField {
+	color: #03C;
+	font-style: italic;
+}
+#mainStage {
+	width: 75%;
+	float: right;
+	font-style: italic;
+}
+#leftSide {
+	width: 25%;
+	float: left;
+}
+HomeMainStage {
+	width: 40%;
+	padding-left: 20px;
+	float: right;
+}
+.invisible {
+	display: none;
+}
+#HomeMainStage p {
+	text-align: left;
+}

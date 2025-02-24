@@ -21,14 +21,31 @@ A detailed look at internet protocols, data transmission, and network communicat
 
 ## The Internet: A Network of Networks
 
-{% include video.html path="assets/Intro_course/videos/Internet_view_1.mp4" caption="Detailed view of internet infrastructure" %}
-
 The internet is built on a hierarchical structure of networks:
 - Local Networks (your home/office)
 - Regional Networks (your ISP)
 - National/International Networks (internet backbone)
+- Tier 1 ISPs (Core Internet Infrastructure)
 
 {% include callout.html type="note" title="Did You Know?" content="The internet was originally developed by DARPA (Defense Advanced Research Projects Agency) as a way to maintain communication in case of a nuclear attack." %}
+
+## Core Internet Infrastructure
+
+### ISP Tiers
+1. **Tier 1 ISPs**
+   - Form the backbone of the internet
+   - Direct connections to other Tier 1 providers
+   - Global network coverage
+   
+2. **Tier 2 ISPs**
+   - Regional and national providers
+   - Connect to Tier 1 networks
+   - Serve smaller ISPs and businesses
+
+3. **Tier 3 ISPs**
+   - Local service providers
+   - Connect end users to the internet
+   - Purchase transit from larger ISPs
 
 ## How Data Packets Work
 
@@ -47,7 +64,7 @@ When you send or receive information over the internet, it's broken down into sm
    - They're reassembled at the destination
    - If a packet is lost, only that piece needs to be resent
 
-{% include figure.html path="assets/Intro_course/images/network-animation.svg" class="img-fluid" alt="Packet Flow" caption="How data packets travel through the network" %}
+{% include video.html path="assets/Intro_course/videos/Internet_view_1.mp4" caption="Detailed view of internet infrastructure" %}
 
 ## Internet Protocols
 
@@ -55,11 +72,29 @@ When you send or receive information over the internet, it's broken down into sm
 The fundamental protocol of the internet:
 - TCP breaks data into packets and reassembles them
 - IP handles addressing and routing
+- Ensures reliable data delivery
+- Manages network congestion
 
 ### HTTP/HTTPS (HyperText Transfer Protocol)
 Used for web browsing:
 - HTTP: Basic web communication
 - HTTPS: Secured, encrypted version
+- TLS encryption for data protection
+- Certificate validation for security
+
+### DHCP (Dynamic Host Configuration Protocol)
+Automatic network configuration:
+- IP address assignment
+- Subnet mask configuration
+- Default gateway setup
+- DNS server information
+
+### DNS (Domain Name System)
+The internet's address book:
+- Converts domain names to IP addresses
+- Hierarchical naming system
+- Distributed database
+- Caching for performance
 
 {% include callout.html type="important" title="Security Note" content="Always look for HTTPS when sharing sensitive information online. The 'S' means the connection is encrypted." %}
 
@@ -116,19 +151,7 @@ Common issues and how to diagnose them:
    - Verify DNS resolution
    - Check server status
    - Clear browser cache
-
-## Advanced Concepts
-
-### Content Delivery Networks (CDNs)
-- Distributed servers worldwide
-- Faster content delivery
-- Reduced server load
-
-### Internet Exchange Points (IXPs)
-- Where networks interconnect
-- Direct data exchange
-- Reduced latency
-
+   
 ## Next Steps
 
 Continue to the [Networking section](/intro-course/networking) to learn about DNS and DHCP - crucial systems that make the internet work smoothly.
