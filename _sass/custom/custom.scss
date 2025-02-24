@@ -1,0 +1,46 @@
+// Adjust title spacing
+.site-title {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+// Style the dark mode toggle button
+.js-toggle-dark-mode {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--body-background-color);
+  color: var(--body-text-color);
+  border: 1px solid var(--body-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: var(--body-text-color);
+    color: var(--body-background-color);
+  }
+}
+
+// Additional spacing fixes for the header area
+.main-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: auto;
+  max-height: none;
+}
+
+.site-nav {
+  padding-top: 1rem;
+}
+
+// Ensure content doesn't overlap with header
+.main-content {
+  margin-top: 1rem;
+}
+
+// Dark mode specific adjustments
+@media (prefers-color-scheme: dark) {
+  .site-title {
+    color: var(--body-text-color);
+  }
+}

@@ -7,6 +7,9 @@ url: https://digitalfoundations.github.io
 # Color scheme supports "light" (default) and "dark"
 color_scheme: light
 
+# Enable dark mode toggle
+enable_dark_mode_toggle: true
+
 # Enable search
 search_enabled: true
 search:
