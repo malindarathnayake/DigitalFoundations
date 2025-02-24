@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Email Works | Digital Explorers</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/learning-lab.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/2018 HFK LOGO_edited.avif" alt="Hope For Kids Inc Logo" class="org-logo">
+                    <span class="logo-text">Digital Explorers</span>
+                </a>
+            </div>
+            <ul class="nav-links" role="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="internet-basics.html">Internet Basics</a></li>
+                <li><a href="dns-dhcp.html">DNS & DHCP</a></li>
+                <li><a href="hardware.html">Computer Hardware</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="learning-content">
+        <div class="container">
+            <h1>How Email Works</h1>
+            <p class="duration">Duration: 50-65 minutes</p>
+
+            <section class="learning-section">
+                <h2>Email Journey</h2>
+                <img src="../assets/images/EmailFlow.svg" alt="Email System Flow: Complete journey of an email from sender to receiver" class="network-video">
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>Composition</h3>
+                        <p>When you write an email, your email client formats it according to specific standards and prepares it for transmission.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Transmission</h3>
+                        <p>The email is sent through SMTP (Simple Mail Transfer Protocol) servers, which relay it to its destination.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Delivery</h3>
+                        <p>The recipient's mail server receives the email and stores it until the recipient's email client retrieves it.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Email Protocols</h2>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>SMTP</h3>
+                        <p>Simple Mail Transfer Protocol handles the sending and routing of email between servers.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>POP3</h3>
+                        <p>Post Office Protocol downloads email to your device and typically deletes it from the server.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>IMAP</h3>
+                        <p>Internet Message Access Protocol keeps emails on the server and syncs across devices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Email Security</h2>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>Encryption</h3>
+                        <p>TLS (Transport Layer Security) encrypts emails in transit to protect them from interception.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Authentication</h3>
+                        <p>SPF, DKIM, and DMARC help verify that emails come from legitimate senders.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Spam Filtering</h3>
+                        <p>Advanced algorithms analyze emails to detect and filter out unwanted spam messages.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Additional Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="https://www.cloudflare.com/learning/email-security/what-is-email-security/" target="_blank" rel="noopener">Cloudflare's Email Security Guide</a></li>
+                    <li><a href="https://www.rfc-editor.org/rfc/rfc5321" target="_blank" rel="noopener">SMTP Protocol Specification</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="section">
+        <div class="container text-center">
+            <p>© 2025 Malinda Rathnayake. All rights reserved.</p>
+            <p class="org-credit">A Hope For Kids Inc Educational Initiative</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/components.js"></script>
+</body>
+</html>

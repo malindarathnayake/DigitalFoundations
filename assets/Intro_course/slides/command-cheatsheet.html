@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Explorers - Command Cheatsheet</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #1f2937;
+        }
+        
+        h1 {
+            color: #2563eb;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+            break-inside: avoid;
+        }
+        
+        h2 {
+            color: #1e40af;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .command {
+            background: #f3f4f6;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        
+        .command code {
+            display: block;
+            font-family: 'Fira Code', monospace;
+            margin-bottom: 0.5rem;
+            color: #2563eb;
+        }
+        
+        .command p {
+            margin: 0;
+            color: #4b5563;
+        }
+
+        .note {
+            background: #fef3c7;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border-left: 4px solid #d97706;
+        }
+
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            .command {
+                border: 1px solid #e5e7eb;
+            }
+            
+            .note {
+                border: 1px solid #d97706;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Explorers Command Cheatsheet</h1>
+    
+    <div class="section">
+        <h2>Network Connectivity Commands</h2>
+        
+        <div class="command">
+            <code>ping example.com</code>
+            <p>Tests connectivity to a server by sending ICMP echo requests. Shows round-trip time and packet loss.</p>
+        </div>
+        
+        <div class="command">
+            <code>tracert example.com</code>
+            <p>Shows the route packets take to reach a server, including all intermediate hops.</p>
+        </div>
+        
+        <div class="command">
+            <code>ipconfig /all</code>
+            <p>Displays detailed network configuration including IP address, DNS servers, and DHCP information.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>DNS Commands</h2>
+        
+        <div class="command">
+            <code>nslookup example.com</code>
+            <p>Queries DNS servers to find IP addresses for a domain name.</p>
+        </div>
+        
+        <div class="command">
+            <code>nslookup -type=MX example.com</code>
+            <p>Finds mail server (MX) records for a domain.</p>
+        </div>
+        
+        <div class="note">
+            <p>DNS resolution is like a phone book for the internet, translating domain names to IP addresses.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>DHCP Troubleshooting</h2>
+        
+        <div class="command">
+            <code>ipconfig /release</code>
+            <p>Releases the current DHCP lease and IP address.</p>
+        </div>
+        
+        <div class="command">
+            <code>ipconfig /renew</code>
+            <p>Requests a new IP address from the DHCP server.</p>
+        </div>
+        
+        <div class="note">
+            <p>If you see an IP address starting with 169.254.x.x, it means DHCP failed and you're using a self-assigned address.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>System Information</h2>
+        
+        <div class="command">
+            <code>systeminfo</code>
+            <p>Shows detailed system information including CPU, RAM, and OS version.</p>
+        </div>
+        
+        <div class="command">
+            <code>tasklist</code>
+            <p>Lists all running processes and their memory usage.</p>
+        </div>
+        
+        <div class="command">
+            <code>wmic cpu get name</code>
+            <p>Shows the CPU model name.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Email Diagnostics</h2>
+        
+        <div class="command">
+            <code>nslookup -type=MX gmail.com</code>
+            <p>Finds Gmail's mail servers.</p>
+        </div>
+        
+        <div class="command">
+            <code>telnet smtp.gmail.com 587</code>
+            <p>Tests connection to Gmail's SMTP server (email sending).</p>
+        </div>
+        
+        <div class="note">
+            <p>Email servers use different ports: 25 (SMTP), 587 (Submission), 993 (IMAP), 995 (POP3)</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Tips for Success</h2>
+        <ul>
+            <li>Always run network diagnostics commands as administrator for full access</li>
+            <li>Document your findings when troubleshooting</li>
+            <li>Check basic connectivity (ping) before advanced diagnostics</li>
+            <li>Remember that some commands might be blocked by firewalls</li>
+        </ul>
+    </div>
+
+    <footer style="text-align: center; margin-top: 3rem; color: #6b7280;">
+        <p>© 2025 Malinda Rathnayake | A Hope For Kids Inc Educational Resource</p>
+    </footer>
+</body>
+</html>

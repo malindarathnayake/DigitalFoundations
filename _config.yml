@@ -1,8 +1,80 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Digital Foundations Course Guide
+description: A comprehensive guide to understanding how computers, the internet, and email work
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://digitalfoundations.github.io
 
+# Color scheme supports "light" (default) and "dark"
+color_scheme: light
+
+# Enable search
+search_enabled: true
+search:
+  # Split pages into sections that can be searched individually
+  heading_level: 2
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+# Enable copy code buttons
+enable_copy_code_button: true
+
+# Sort order for navigation
+nav_sort: case_sensitive
+
+# External navigation links
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "Course GitHub Repository": "https://github.com/DigitalFoundations/DigitalFoundations.github.io"
+
+# Makes Aux links open in new tab
+aux_links_new_tab: true
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+# Footer content
+footer_content: "Copyright &copy; 2024 Digital Foundations. Distributed under an MIT license."
+
+# Heading anchor links appear on hover
+heading_anchors: true
+
+# Compress CSS
+compress_css: true
+
+# For copy button on code
+enable_copy_code_button: true
+
+# Enable callouts
+callouts:
+  warning:
+    title: Warning
+    color: red
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  important:
+    title: Important
+    color: purple
+
+# Collections for better content organization
+collections:
+  intro_course:
+    permalink: "/:collection/:path/"
+    output: true
+
+# Default YAML front matter
+defaults:
+  -
+    scope:
+      path: ""
+      type: intro_course
+    values:
+      layout: default
+      nav_order: 1

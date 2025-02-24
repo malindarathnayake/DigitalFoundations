@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS & DHCP Basics | Digital Explorers</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/learning-lab.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/2018 HFK LOGO_edited.avif" alt="Hope For Kids Inc Logo" class="org-logo">
+                    <span class="logo-text">Digital Explorers</span>
+                </a>
+            </div>
+            <ul class="nav-links" role="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="internet-basics.html">Internet Basics</a></li>
+                <li><a href="email.html">Email Systems</a></li>
+                <li><a href="hardware.html">Computer Hardware</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="learning-content">
+        <div class="container">
+            <h1>DNS & DHCP Basics</h1>
+            <p class="duration">Duration: 25-40 minutes</p>
+
+            <section class="learning-section">
+                <h2>Domain Name System (DNS)</h2>
+                <img src="../assets/images/DNS_Flow.svg" alt="DNS Process: Step-by-step flow of domain name resolution from browser to authoritative server" class="network-video">
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>What is DNS?</h3>
+                        <p>DNS is like the internet's phone book. It translates human-readable domain names (like google.com) into IP addresses that computers can understand.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>DNS Servers</h3>
+                        <p>Different types of DNS servers work together to resolve domain names: Root servers, TLD servers, and Authoritative servers.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>DNS Cache</h3>
+                        <p>Your device and local DNS servers keep a temporary record of resolved domain names to speed up future requests.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Dynamic Host Configuration Protocol (DHCP)</h2>
+                <img src="../assets/images/DHCP_flow.svg" alt="DHCP Process: The DORA process (Discover, Offer, Request, Acknowledge) for dynamic IP address assignment" class="network-video">
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>What is DHCP?</h3>
+                        <p>DHCP automatically assigns IP addresses and network configuration to devices when they join a network.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>The DORA Process</h3>
+                        <p>DHCP uses a four-step process: Discover, Offer, Request, and Acknowledge (DORA) to assign IP addresses.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Lease Time</h3>
+                        <p>IP addresses are assigned for a specific time period (lease). Devices must renew their lease to keep using the same IP.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Hands-On Practice</h2>
+                <div class="terminal-container">
+                    <!-- Terminal content will be populated by JavaScript -->
+                </div>
+                <p>Try these commands to explore DNS and DHCP on your computer:</p>
+                <ul class="command-list">
+                    <li><code>nslookup google.com</code> - Look up DNS information for a domain</li>
+                    <li><code>ipconfig /all</code> - View DHCP lease information</li>
+                    <li><code>ipconfig /displaydns</code> - View your DNS cache</li>
+                </ul>
+            </section>
+
+            <section class="learning-section">
+                <h2>Additional Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="https://www.cloudflare.com/learning/dns/what-is-dns/" target="_blank" rel="noopener">Cloudflare's DNS Guide</a></li>
+                    <li><a href="https://www.networkworld.com/article/3299438/dhcp-defined-and-how-it-works.html" target="_blank" rel="noopener">Network World: DHCP Explained</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="section">
+        <div class="container text-center">
+            <p>© 2025 Malinda Rathnayake. All rights reserved.</p>
+            <p class="org-credit">A Hope For Kids Inc Educational Initiative</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize terminal with DNS lookup content
+            const dnsContent = `nslookup google.com
+Server: 192.168.1.1
+Address: 192.168.1.1#53
+
+Non-authoritative answer:
+Name: google.com
+Address: 142.250.xxx.xxx`;
+            
+            const terminalContainer = document.querySelector('.terminal-container');
+            if (terminalContainer) {
+                Terminal.createAndAppend(terminalContainer, dnsContent);
+            }
+        });
+    </script>
+</body>
+</html>

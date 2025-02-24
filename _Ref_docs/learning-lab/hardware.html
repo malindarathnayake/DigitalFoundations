@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPU & RAM Basics | Digital Explorers</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/learning-lab.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/images/2018 HFK LOGO_edited.avif" alt="Hope For Kids Inc Logo" class="org-logo">
+                    <span class="logo-text">Digital Explorers</span>
+                </a>
+            </div>
+            <ul class="nav-links" role="navigation">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="internet-basics.html">Internet Basics</a></li>
+                <li><a href="dns-dhcp.html">DNS & DHCP</a></li>
+                <li><a href="email.html">Email Systems</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="learning-content">
+        <div class="container">
+            <h1>CPU & RAM Basics</h1>
+            <p class="duration">Duration: 65-80 minutes</p>
+
+            <section class="learning-section">
+                <h2>Central Processing Unit (CPU)</h2>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>What is a CPU?</h3>
+                        <p>The CPU is the brain of your computer, executing instructions and performing calculations for all programs and operations.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Clock Speed</h3>
+                        <p>Measured in GHz (gigahertz), clock speed indicates how many cycles the CPU can execute per second.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Cores</h3>
+                        <p>Modern CPUs have multiple cores, allowing them to process multiple tasks simultaneously.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>CPU Components</h2>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>Control Unit</h3>
+                        <p>Manages and coordinates CPU operations, directing the flow of data between CPU components.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>ALU</h3>
+                        <p>The Arithmetic Logic Unit performs mathematical calculations and logical operations.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Cache</h3>
+                        <p>High-speed memory built into the CPU for quick access to frequently used data.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Random Access Memory (RAM)</h2>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>What is RAM?</h3>
+                        <p>RAM is your computer's short-term memory, storing data that active programs need for quick access.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Volatile Memory</h3>
+                        <p>RAM is volatile, meaning it loses its contents when power is turned off, unlike storage devices.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Memory Speed</h3>
+                        <p>RAM speed is measured in MHz and affects how quickly data can be read or written.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>RAM Types and Usage</h2>
+                <div class="concept-grid">
+                    <div class="concept-card">
+                        <h3>DDR4</h3>
+                        <p>Current standard for RAM, offering high speeds and improved power efficiency.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Memory Channels</h3>
+                        <p>Multiple channels allow parallel data transfer between RAM and CPU for better performance.</p>
+                    </div>
+                    <div class="concept-card">
+                        <h3>Virtual Memory</h3>
+                        <p>When RAM is full, the system uses hard drive space as virtual memory, though it's much slower.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <h2>Hands-On Practice</h2>
+                <div class="terminal-container">
+                    <!-- Terminal content will be populated by JavaScript -->
+                </div>
+                <p>Try these commands to view your system's hardware information:</p>
+                <ul class="command-list">
+                    <li><code>wmic cpu get name</code> - View CPU model</li>
+                    <li><code>wmic memorychip get capacity</code> - View RAM capacity</li>
+                    <li><code>systeminfo</code> - View complete system information</li>
+                </ul>
+            </section>
+
+            <section class="learning-section">
+                <h2>Additional Resources</h2>
+                <ul class="resource-list">
+                    <li><a href="https://www.intel.com/content/www/us/en/products/docs/processors/what-is-a-cpu.html" target="_blank" rel="noopener">Intel's Guide to CPUs</a></li>
+                    <li><a href="https://www.crucial.com/articles/about-memory/support-what-does-computer-memory-do" target="_blank" rel="noopener">Crucial's RAM Guide</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="section">
+        <div class="container text-center">
+            <p>© 2025 Malinda Rathnayake. All rights reserved.</p>
+            <p class="org-credit">A Hope For Kids Inc Educational Initiative</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize terminal with system info content
+            const sysInfoContent = `wmic cpu get name
+Intel(R) Core(TM) i7-10700K CPU @ 3.80GHz
+
+wmic memorychip get capacity
+16384 MB (16 GB)`;
+            
+            const terminalContainer = document.querySelector('.terminal-container');
+            if (terminalContainer) {
+                Terminal.createAndAppend(terminalContainer, sysInfoContent);
+            }
+        });
+    </script>
+</body>
+</html>
