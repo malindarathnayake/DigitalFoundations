@@ -1,0 +1,45 @@
+{% comment %}
+  Include a video with caption in your content.
+  
+  Parameters:
+  - path: The path to the video file
+  - caption: Optional caption text
+  - poster: Optional poster image path
+  - autoplay: Optional autoplay setting (true/false)
+  - controls: Optional controls setting (true/false, defaults to true)
+{% endcomment %}
+
+<figure class="video-figure">
+  <video class="video-player" 
+         {% if include.poster %}poster="{{ include.poster | relative_url }}"{% endif %}
+         {% if include.autoplay %}autoplay{% endif %}
+         {% if include.controls != false %}controls{% endif %}
+         playsinline>
+    <source src="{{ include.path | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  {% if include.caption %}
+    <figcaption class="video-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
+
+<style>
+.video-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.video-player {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+  background-color: #000;
+}
+
+.video-caption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-align: center;
+}
+</style>

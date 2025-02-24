@@ -1,0 +1,43 @@
+{% comment %}
+  Include a figure with caption in your content.
+  
+  Parameters:
+  - path: The path to the image file
+  - alt: Alt text for the image
+  - caption: Optional caption text
+  - class: Optional CSS class(es)
+{% endcomment %}
+
+<figure class="figure {% if include.class %}{{ include.class }}{% endif %}">
+  <img src="{{ include.path | relative_url }}" 
+       alt="{{ include.alt }}" 
+       class="figure-img">
+  {% if include.caption %}
+    <figcaption class="figure-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
+
+<style>
+.figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.figure-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.figure-caption {
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+</style>

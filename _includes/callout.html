@@ -1,0 +1,65 @@
+{% comment %}
+  Include a callout box in your content.
+  
+  Parameters:
+  - type: The type of callout (note, warning, tip, important)
+  - title: The title of the callout
+  - content: The content of the callout
+{% endcomment %}
+
+<div class="callout callout-{{ include.type }}">
+  <div class="callout-title">
+    {% case include.type %}
+      {% when 'warning' %}
+        ⚠️
+      {% when 'note' %}
+        📝
+      {% when 'tip' %}
+        💡
+      {% when 'important' %}
+        ❗
+    {% endcase %}
+    {{ include.title }}
+  </div>
+  <div class="callout-content">
+    {{ include.content }}
+  </div>
+</div>
+
+<style>
+.callout {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  border-left: 4px solid;
+}
+
+.callout-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.callout-content {
+  margin: 0;
+}
+
+.callout-note {
+  background-color: #f8f9fa;
+  border-left-color: #007bff;
+}
+
+.callout-warning {
+  background-color: #fff3cd;
+  border-left-color: #ffc107;
+}
+
+.callout-tip {
+  background-color: #d4edda;
+  border-left-color: #28a745;
+}
+
+.callout-important {
+  background-color: #f8d7da;
+  border-left-color: #dc3545;
+}
+</style>
