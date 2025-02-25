@@ -41,8 +41,6 @@ The Introduction to Technology Fundamentals course is designed for young adults 
 
 ## Course Features
 
-{% include figure.html path="assets/Intro_course/images/network-animation.svg" class="img-fluid" alt="Network Animation" caption="Interactive network diagrams help visualize complex concepts" %}
-
 - 📝 Detailed documentation and guides
 - 🎥 Video demonstrations
 - 💻 Interactive diagrams
@@ -65,3 +63,7 @@ After completing the introductory course, you will understand:
 ## About Digital Foundations
 
 Digital Foundations is committed to making technology education accessible and engaging. Our courses combine theoretical knowledge with practical applications to ensure a comprehensive learning experience.
+
+The Digital Foundations courses are supported and hosted by the hopeforkids.org organization.
+
+The course is conducted by Malinda Rathnayake.

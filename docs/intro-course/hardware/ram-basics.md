@@ -343,7 +343,11 @@ Try these interactive exercises to better understand RAM concepts:
 
 ## Next Steps
 
-Review the [Command Cheatsheet](assets/Intro_course/slides/command-cheatsheet.html) for useful memory monitoring commands and tools.
+Continue exploring hardware concepts:
+
+- [CPU Basics](cpu-basics): Learn how processors work with RAM
+- [How Semiconductors are Made](semiconductor-manufacturing): Understand the manufacturing process behind memory chips
+- [Command Cheatsheet](assets/Intro_course/slides/command-cheatsheet.html): Useful memory monitoring commands and tools
 
 ## Additional Resources
 

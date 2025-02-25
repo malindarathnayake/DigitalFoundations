@@ -449,6 +449,7 @@ Modern implementations include:
 Now that you understand CPU basics, you might want to explore:
 
 - [RAM Basics](ram-basics): How computer memory works with the CPU
+- [How Semiconductors are Made](semiconductor-manufacturing): The fascinating process of creating CPU chips
 - [Computer Hardware Overview](overview): The broader context of computer components
 - [Storage Technologies](/intro-course/storage/overview): How data is stored permanently
 

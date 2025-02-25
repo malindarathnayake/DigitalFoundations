@@ -7,10 +7,10 @@ has_children: true
 permalink: /intro-course/hardware
 ---
 
-# CPU & RAM Basics
+# Computer Hardware Fundamentals
 {: .no_toc }
 
-Understanding the fundamental components that power computers and how they process information.
+Understanding the components that power computers, from silicon to processing and memory.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -27,7 +27,7 @@ Modern computers are complex machines built from various components working toge
 - Understand how your devices process information
 - Troubleshoot common problems
 
-{% include callout.html type="important" title="Key Concept" content="While computers have many components, the CPU and RAM are the most critical for understanding how computers process and temporarily store information." %}
+{% include callout.html type="important" title="Key Concept" content="While computers have many components, understanding semiconductors, CPU, and RAM provides the foundation for how modern computers are made, process information, and temporarily store data." %}
 
 ## Core Components
 
@@ -54,6 +54,16 @@ The computer's "short-term memory" that:
 {% include figure.html path="assets/Intro_course/images/RAM_Diagram.svg" class="img-fluid" alt="RAM Diagram" caption="How RAM stores and retrieves data for active programs" %}
 
 [Learn more about RAM](ram-basics){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+### 3. Semiconductor Manufacturing
+The foundation of modern computing:
+- Transforms silicon (sand) into thinking machines
+- Creates billions of transistors on a single chip
+- Involves some of the most precise manufacturing on Earth
+- Requires extreme purity and clean environments
+- Enables the continuous advancement of computing power
+
+[Learn more about Semiconductors](semiconductor-manufacturing){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ## How Components Work Together
 
@@ -168,8 +178,9 @@ When buying or upgrading a computer, these are key specifications to understand:
 
 1. Explore [CPU Basics](cpu-basics) for a deeper understanding of processors
 2. Continue to [RAM Basics](ram-basics) for more on memory concepts
-3. Practice monitoring your system resources using Task Manager
-4. Try the troubleshooting activity with your own computer
+3. Learn about [How Semiconductors are Made](semiconductor-manufacturing) to understand the foundation of computing
+4. Practice monitoring your system resources using Task Manager
+5. Try the troubleshooting activity with your own computer
 
 ## Additional Resources
 
