@@ -7,10 +7,10 @@ has_children: true
 permalink: /intro-course/hardware
 ---
 
-# Computer Hardware
+# CPU & RAM Basics
 {: .no_toc }
 
-Understanding the fundamental components that power computers.
+Understanding the fundamental components that power computers and how they process information.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -24,23 +24,34 @@ Understanding the fundamental components that power computers.
 Modern computers are complex machines built from various components working together. Understanding the basic hardware components helps you:
 - Diagnose performance issues
 - Make informed upgrade decisions
-- Maintain your computer effectively
+- Understand how your devices process information
+- Troubleshoot common problems
+
+{% include callout.html type="important" title="Key Concept" content="While computers have many components, the CPU and RAM are the most critical for understanding how computers process and temporarily store information." %}
 
 ## Core Components
 
 ### 1. CPU (Central Processing Unit)
 The "brain" of the computer that:
-- Executes instructions
-- Performs calculations
+- Executes instructions using the fetch-decode-execute cycle
+- Performs calculations and logical operations
 - Coordinates other components
+- Operates at a specific clock speed (measured in GHz)
+- May have multiple cores for parallel processing
+
+{% include figure.html path="assets/Intro_course/images/CPU_Diagram.svg" class="img-fluid" alt="CPU Diagram" caption="Basic structure of a CPU showing the fetch-decode-execute cycle" %}
 
 [Learn more about CPU](cpu-basics){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
 ### 2. RAM (Random Access Memory)
 The computer's "short-term memory" that:
-- Stores active programs
-- Holds current data
-- Enables quick access
+- Stores active programs and current data
+- Provides fast access compared to storage drives
+- Is volatile (contents are lost when power is off)
+- Has a specific capacity (measured in GB)
+- Affects how many programs can run simultaneously
+
+{% include figure.html path="assets/Intro_course/images/RAM_Diagram.svg" class="img-fluid" alt="RAM Diagram" caption="How RAM stores and retrieves data for active programs" %}
 
 [Learn more about RAM](ram-basics){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 
@@ -48,27 +59,35 @@ The computer's "short-term memory" that:
 
 {% include callout.html type="note" title="System Integration" content="The CPU and RAM work together closely - the CPU processes instructions stored in RAM, which holds both the programs and their data." %}
 
-### Processing Flow
-1. Program loads into RAM
-2. CPU fetches instructions
-3. CPU executes instructions
-4. Results stored in RAM
-5. Process repeats
+### The Fetch-Decode-Execute Cycle
 
-## Performance Monitoring
+The fundamental process that powers all computing:
+
+1. **Fetch**: CPU retrieves an instruction from RAM
+2. **Decode**: CPU determines what the instruction means
+3. **Execute**: CPU performs the instruction
+4. **Store**: Results are written back to RAM
+5. **Repeat**: The cycle continues millions of times per second
+
+{% include figure.html path="assets/Intro_course/images/FetchDecodeExecute.svg" class="img-fluid" alt="Fetch-Decode-Execute Cycle" caption="The continuous cycle that powers all computing operations" %}
+
+## Hands-On Demonstration
 
 ### Using Task Manager (Windows)
 
 ```bash
 # Open Task Manager
 taskmgr
-
-# Alternative command-line tool
-wmic cpu get loadpercentage
 ```
 {: .code-example }
 
-### Using Terminal (Linux/Mac)
+Task Manager shows:
+- Current CPU usage percentage
+- Memory (RAM) usage
+- Running processes and their resource consumption
+- Performance history graphs
+
+### Using Terminal (Mac/Linux)
 ```bash
 # View system resources
 top
@@ -78,69 +97,83 @@ free -h
 ```
 {: .code-example }
 
-{% include callout.html type="tip" title="Monitoring Tip" content="Regular monitoring helps you understand your computer's normal behavior and spot potential issues early." %}
+{% include callout.html type="tip" title="Try It Yourself" content="Open your computer's Task Manager (Windows) or Activity Monitor (Mac) and observe how CPU and RAM usage changes as you open and close programs." %}
 
-## Common Hardware Issues
+## Real-World Impact
 
-### 1. Performance Problems
-- High CPU usage
-- RAM bottlenecks
-- Slow response times
-- System freezes
+### When CPU is Overloaded:
+- System becomes sluggish
+- Programs respond slowly
+- Operations take longer to complete
+- Computer may feel hot as the processor works harder
 
-### 2. Hardware Failures
-- System crashes
-- Boot failures
-- Memory errors
-- Overheating
+### When RAM is Insufficient:
+- System slows down dramatically
+- Programs may crash
+- Computer starts using disk space as virtual memory (much slower)
+- You may see "out of memory" errors
 
-## Best Practices
+## Mini Troubleshooting Activity
 
-### 1. Maintenance
-- Regular cleaning
-- Good ventilation
-- Monitor temperatures
-- Update drivers
+### Scenario: Your computer is running slowly
 
-### 2. Usage
-- Close unused programs
-- Manage startup items
-- Monitor resource usage
-- Regular restarts
+**Steps to diagnose:**
+1. Open Task Manager/Activity Monitor
+2. Check CPU usage - is it consistently near 100%?
+3. Check RAM usage - is it nearly full?
+4. Identify which processes are using the most resources
+5. Determine if you need to close programs, add more RAM, or upgrade your CPU
 
-### 3. Upgrades
-- Assess needs
-- Check compatibility
-- Plan capacity
-- Consider future needs
+{% include callout.html type="warning" title="Resource Hogs" content="Some common causes of high resource usage include web browsers with many tabs, video editing software, games, and malware." %}
 
-## Hands-On Practice
+## Best Practices for Optimal Performance
 
-Try these monitoring tasks:
+### 1. Software Management
+- Close unused programs to free up RAM
+- Limit startup programs that run automatically
+- Keep your operating system and applications updated
+- Restart your computer regularly to clear RAM
 
-1. **CPU Monitoring**
-   - Open Task Manager
-   - Watch CPU usage
-   - Identify heavy processes
-   - Note temperature
+### 2. Hardware Maintenance
+- Ensure proper ventilation for cooling
+- Clean dust from air vents periodically
+- Monitor temperatures during intensive tasks
+- Consider upgrading RAM if consistently at capacity
 
-2. **RAM Analysis**
-   - Check memory usage
-   - Observe page file use
-   - Monitor application memory
-   - Identify memory leaks
+### 3. When to Upgrade
+- When multiple programs run slowly simultaneously
+- When newer software requires more resources
+- When Task Manager consistently shows high usage
+- When your work or activities are being limited
 
-{% include callout.html type="important" title="Safety First" content="Always shut down your computer properly and avoid opening it unless you're qualified to do so." %}
+## Understanding Computer Specifications
+
+When buying or upgrading a computer, these are key specifications to understand:
+
+### CPU Specifications
+- **Clock Speed**: How many cycles per second (e.g., 3.2 GHz)
+- **Cores**: Number of processing units (e.g., quad-core, octa-core)
+- **Cache**: Small, very fast memory built into the CPU
+- **Architecture**: Design and instruction set (e.g., x86, ARM)
+
+### RAM Specifications
+- **Capacity**: Total memory available (e.g., 8GB, 16GB)
+- **Type**: Technology generation (e.g., DDR4, DDR5)
+- **Speed**: How quickly data can be accessed (e.g., 3200 MHz)
+- **Channels**: How memory communicates with the system
+
+{% include callout.html type="important" title="Safety First" content="Always shut down your computer properly before making any hardware changes, and avoid opening your computer unless you're qualified to do so." %}
 
 ## Next Steps
 
-1. Start with [CPU Basics](cpu-basics) to understand processing
-2. Continue to [RAM Basics](ram-basics) for memory concepts
-3. Practice monitoring system resources
+1. Explore [CPU Basics](cpu-basics) for a deeper understanding of processors
+2. Continue to [RAM Basics](ram-basics) for more on memory concepts
+3. Practice monitoring your system resources using Task Manager
+4. Try the troubleshooting activity with your own computer
 
 ## Additional Resources
 
-- Hardware troubleshooting guides
-- System monitoring tools
+- [Hardware Troubleshooting Guide](/intro-course/resources/hardware-troubleshooting)
+- [System Monitoring Tools](/intro-course/resources/monitoring-tools)
 - [Command Cheatsheet](assets/Intro_course/slides/command-cheatsheet.html)
-- Performance optimization tips
+- [Performance Optimization Tips](/intro-course/resources/performance-tips)

@@ -1,11 +1,12 @@
-title: Digital Foundations Course Guide
+title: Digital Foundations
 description: A comprehensive guide to understanding how computers, the internet, and email work
 theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 
-url: https://digitalfoundations.github.io
+url: https://malindarathnayake.github.io/DigitalFoundations/
 
 # Color scheme supports "light" (default) and "dark"
-color_scheme: light
+color_scheme: dark
 
 # Enable dark mode toggle
 enable_dark_mode_toggle: true
@@ -30,7 +31,7 @@ nav_sort: case_sensitive
 
 # External navigation links
 aux_links:
-  "Course GitHub Repository": "https://github.com/DigitalFoundations/DigitalFoundations.github.io"
+  "Course GitHub Repository": "https://malindarathnayake.github.io/DigitalFoundations/"
 
 # Makes Aux links open in new tab
 aux_links_new_tab: true
@@ -40,7 +41,7 @@ back_to_top: true
 back_to_top_text: "Back to top"
 
 # Footer content
-footer_content: "Copyright &copy; 2024 Digital Foundations. Distributed under an MIT license."
+footer_content: "Copyright &copy; 2025 Malinda Rathnayake. Distributed under an MIT license."
 
 # Heading anchor links appear on hover
 heading_anchors: true

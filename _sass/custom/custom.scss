@@ -43,4 +43,34 @@
   .site-title {
     color: var(--body-text-color);
   }
+
+  // Invert callout colors for dark mode
+  .callout {
+    background-color: rgba(235, 235, 235, 0.1) !important;
+    border-color: var(--body-text-color) !important;
+
+    &.warning {
+      background-color: rgba(255, 0, 0, 0.15) !important;
+      border-left-color: #ff6b6b !important;
+    }
+
+    &.note {
+      background-color: rgba(0, 0, 255, 0.15) !important;
+      border-left-color: #4dabf7 !important;
+    }
+
+    &.tip {
+      background-color: rgba(0, 255, 0, 0.15) !important;
+      border-left-color: #69db7c !important;
+    }
+
+    &.important {
+      background-color: rgba(128, 0, 128, 0.15) !important;
+      border-left-color: #da77f2 !important;
+    }
+
+    .callout-title {
+      color: var(--body-text-color) !important;
+    }
+  }
 }

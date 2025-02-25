@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#1e1e2e" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#cdd6f4" text-anchor="middle" font-weight="bold">Random Access Memory (RAM)</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" fill="#cdd6f4" text-anchor="middle">Structure and Function</text>
+  
+  <!-- RAM Module Visual -->
+  <rect x="100" y="100" width="600" height="150" fill="#313244" stroke="#cba6f7" stroke-width="3" rx="5" ry="5"/>
+  
+  <!-- RAM Chips -->
+  <rect x="120" y="120" width="80" height="110" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+  <rect x="210" y="120" width="80" height="110" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+  <rect x="300" y="120" width="80" height="110" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+  <rect x="390" y="120" width="80" height="110" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+  <rect x="480" y="120" width="80" height="110" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+  <rect x="570" y="120" width="80" height="110" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+  
+  <!-- RAM Pins -->
+  <rect x="100" y="250" width="600" height="10" fill="#89b4fa" stroke="#cdd6f4" stroke-width="1"/>
+  
+  <!-- RAM Memory Structure -->
+  <rect x="150" y="300" width="500" height="250" fill="#313244" stroke="#cba6f7" stroke-width="2" rx="5" ry="5"/>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="18" fill="#cba6f7" text-anchor="middle" font-weight="bold">Memory Structure</text>
+  
+  <!-- Memory Cells -->
+  <g id="memory-cells">
+    <!-- Row 1 -->
+    <rect x="200" y="350" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="240" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Address 0</text>
+    
+    <rect x="280" y="350" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="320" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Address 1</text>
+    
+    <rect x="360" y="350" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="400" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Address 2</text>
+    
+    <rect x="440" y="350" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="480" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Address 3</text>
+    
+    <rect x="520" y="350" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="560" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">...</text>
+    
+    <!-- Row 2 -->
+    <rect x="200" y="380" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="240" y="400" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">OS Kernel</text>
+    
+    <rect x="280" y="380" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="320" y="400" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Drivers</text>
+    
+    <rect x="360" y="380" width="80" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="400" y="400" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program A</text>
+    
+    <rect x="440" y="380" width="80" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="480" y="400" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program B</text>
+    
+    <rect x="520" y="380" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="560" y="400" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">...</text>
+    
+    <!-- Row 3 -->
+    <rect x="200" y="410" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="240" y="430" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">System</text>
+    
+    <rect x="280" y="410" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="320" y="430" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Services</text>
+    
+    <rect x="360" y="410" width="80" height="30" fill="#f38ba8" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="400" y="430" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program C</text>
+    
+    <rect x="440" y="410" width="80" height="30" fill="#f38ba8" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="480" y="430" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program D</text>
+    
+    <rect x="520" y="410" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="560" y="430" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">...</text>
+    
+    <!-- Row 4 -->
+    <rect x="200" y="440" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="240" y="460" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">File Cache</text>
+    
+    <rect x="280" y="440" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="320" y="460" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Buffers</text>
+    
+    <rect x="360" y="440" width="80" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="400" y="460" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program E</text>
+    
+    <rect x="440" y="440" width="80" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="480" y="460" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program F</text>
+    
+    <rect x="520" y="440" width="80" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="560" y="460" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">...</text>
+    
+    <!-- Row 5 -->
+    <rect x="200" y="470" width="400" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="400" y="490" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Free Memory</text>
+    
+    <!-- Row 6 -->
+    <rect x="200" y="500" width="400" height="30" fill="#45475a" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="400" y="520" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Free Memory</text>
+  </g>
+  
+  <!-- RAM Characteristics -->
+  <g id="ram-characteristics">
+    <rect x="50" y="350" width="120" height="180" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    <text x="110" y="370" font-family="Arial, sans-serif" font-size="14" fill="#89b4fa" text-anchor="middle" font-weight="bold">Characteristics</text>
+    
+    <text x="110" y="395" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">• Volatile</text>
+    <text x="110" y="415" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">• Random Access</text>
+    <text x="110" y="435" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">• Fast Access</text>
+    <text x="110" y="455" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">• Temporary</text>
+    <text x="110" y="475" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">• Cleared on</text>
+    <text x="110" y="490" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">  Shutdown</text>
+    <text x="110" y="510" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">• Measured in GB</text>
+  </g>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="630" y="350" width="120" height="120" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    <text x="690" y="370" font-family="Arial, sans-serif" font-size="14" fill="#89b4fa" text-anchor="middle" font-weight="bold">Legend</text>
+    
+    <rect x="640" y="385" width="15" height="10" fill="#45475a"/>
+    <text x="700" y="395" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">System Memory</text>
+    
+    <rect x="640" y="410" width="15" height="10" fill="#a6e3a1"/>
+    <text x="700" y="420" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Active Programs</text>
+    
+    <rect x="640" y="435" width="15" height="10" fill="#f38ba8"/>
+    <text x="700" y="445" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Being Paged</text>
+  </g>
+  
+  <!-- Arrows -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cdd6f4"/>
+    </marker>
+  </defs>
+  
+  <!-- CPU to RAM -->
+  <path d="M 400,100 L 400,80 L 700,80 L 700,425 L 630,425" stroke="#f38ba8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="650" y="70" font-family="Arial, sans-serif" font-size="14" fill="#f38ba8" text-anchor="middle">CPU Access</text>
+  
+  <!-- Virtual Memory -->
+  <path d="M 400,550 L 400,570 L 700,570 L 700,445 L 630,445" stroke="#cba6f7" stroke-width="2" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="5,3"/>
+  <text x="650" y="585" font-family="Arial, sans-serif" font-size="14" fill="#cba6f7" text-anchor="middle">Virtual Memory (Disk)</text>
+</svg>

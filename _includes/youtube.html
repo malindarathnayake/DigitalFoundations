@@ -1,0 +1,56 @@
+{% comment %}
+  Include a YouTube video with caption in your content.
+  
+  Parameters:
+  - id: The YouTube video ID
+  - caption: Optional caption text
+  - width: Optional width (default: 100%)
+  - height: Optional height (default: 400px)
+{% endcomment %}
+
+<figure class="youtube-figure">
+  <div class="youtube-container">
+    <iframe 
+      src="https://www.youtube.com/embed/{{ include.id }}{% if include.autoplay %}?autoplay=1{% endif %}" 
+      frameborder="0" 
+      allowfullscreen
+      class="youtube-iframe"
+      {% if include.width %}width="{{ include.width }}"{% endif %}
+      {% if include.height %}height="{{ include.height }}"{% endif %}>
+    </iframe>
+  </div>
+  {% if include.caption %}
+    <figcaption class="youtube-caption">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
+
+<style>
+.youtube-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.youtube-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.youtube-caption {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+  text-align: center;
+}
+</style>

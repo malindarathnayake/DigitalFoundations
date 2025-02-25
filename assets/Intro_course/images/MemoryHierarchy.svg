@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#1e1e2e" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#cdd6f4" text-anchor="middle" font-weight="bold">Memory Hierarchy</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" fill="#cdd6f4" text-anchor="middle">Speed vs. Capacity Tradeoffs</text>
+  
+  <!-- Memory Pyramid -->
+  <g id="memory-pyramid">
+    <!-- CPU Registers -->
+    <path d="M 400,120 L 320,170 L 480,170 Z" fill="#f38ba8" stroke="#cdd6f4" stroke-width="2"/>
+    <text x="400" y="150" font-family="Arial, sans-serif" font-size="16" fill="#1e1e2e" text-anchor="middle" font-weight="bold">CPU Registers</text>
+    
+    <!-- L1 Cache -->
+    <path d="M 320,170 L 270,220 L 530,220 L 480,170 Z" fill="#f9e2af" stroke="#cdd6f4" stroke-width="2"/>
+    <text x="400" y="200" font-family="Arial, sans-serif" font-size="16" fill="#1e1e2e" text-anchor="middle" font-weight="bold">L1/L2/L3 Cache</text>
+    
+    <!-- RAM -->
+    <path d="M 270,220 L 220,290 L 580,290 L 530,220 Z" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="2"/>
+    <text x="400" y="260" font-family="Arial, sans-serif" font-size="18" fill="#1e1e2e" text-anchor="middle" font-weight="bold">RAM</text>
+    
+    <!-- Storage -->
+    <path d="M 220,290 L 150,390 L 650,390 L 580,290 Z" fill="#89b4fa" stroke="#cdd6f4" stroke-width="2"/>
+    <text x="400" y="350" font-family="Arial, sans-serif" font-size="20" fill="#1e1e2e" text-anchor="middle" font-weight="bold">Storage (SSD/HDD)</text>
+  </g>
+  
+  <!-- Arrows and Labels -->
+  <g id="arrows-labels">
+    <!-- Speed Arrow -->
+    <line x1="150" y1="150" x2="150" y2="350" stroke="#f5c2e7" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="150" y="130" font-family="Arial, sans-serif" font-size="16" fill="#f5c2e7" text-anchor="middle" font-weight="bold">Speed</text>
+    <text x="120" y="170" font-family="Arial, sans-serif" font-size="14" fill="#f5c2e7" text-anchor="end">Fastest</text>
+    <text x="120" y="350" font-family="Arial, sans-serif" font-size="14" fill="#f5c2e7" text-anchor="end">Slowest</text>
+    
+    <!-- Capacity Arrow -->
+    <line x1="650" y1="350" x2="650" y2="150" stroke="#89b4fa" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="650" y="130" font-family="Arial, sans-serif" font-size="16" fill="#89b4fa" text-anchor="middle" font-weight="bold">Capacity</text>
+    <text x="680" y="170" font-family="Arial, sans-serif" font-size="14" fill="#89b4fa" text-anchor="start">Smallest</text>
+    <text x="680" y="350" font-family="Arial, sans-serif" font-size="14" fill="#89b4fa" text-anchor="start">Largest</text>
+    
+    <!-- Cost Arrow -->
+    <line x1="100" y1="150" x2="100" y2="350" stroke="#f9e2af" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <text x="100" y="130" font-family="Arial, sans-serif" font-size="16" fill="#f9e2af" text-anchor="middle" font-weight="bold">Cost</text>
+    <text x="70" y="170" font-family="Arial, sans-serif" font-size="14" fill="#f9e2af" text-anchor="end">Highest</text>
+    <text x="70" y="350" font-family="Arial, sans-serif" font-size="14" fill="#f9e2af" text-anchor="end">Lowest</text>
+  </g>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cdd6f4"/>
+    </marker>
+  </defs>
+  
+  <!-- Specifications -->
+  <g id="specifications">
+    <rect x="100" y="410" width="600" height="80" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    
+    <!-- CPU Registers -->
+    <rect x="120" y="425" width="15" height="10" fill="#f38ba8"/>
+    <text x="145" y="433" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">CPU Registers: Few bytes, nanosecond access, built into CPU</text>
+    
+    <!-- Cache -->
+    <rect x="120" y="445" width="15" height="10" fill="#f9e2af"/>
+    <text x="145" y="453" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">Cache Memory: KB to MB, nanosecond access, on CPU die or nearby</text>
+    
+    <!-- RAM -->
+    <rect x="120" y="465" width="15" height="10" fill="#a6e3a1"/>
+    <text x="145" y="473" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">RAM: GB, ~100 nanosecond access, volatile, main system memory</text>
+    
+    <!-- Storage -->
+    <rect x="400" y="425" width="15" height="10" fill="#89b4fa"/>
+    <text x="425" y="433" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">SSD Storage: TB, microsecond access, non-volatile</text>
+    
+    <!-- HDD -->
+    <rect x="400" y="445" width="15" height="10" fill="#89b4fa" stroke="#cdd6f4" stroke-width="1" stroke-dasharray="2,1"/>
+    <text x="425" y="453" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">HDD Storage: TB, millisecond access, non-volatile, mechanical</text>
+    
+    <!-- Virtual Memory -->
+    <rect x="400" y="465" width="15" height="10" fill="#cba6f7"/>
+    <text x="425" y="473" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">Virtual Memory: Uses storage as RAM extension, much slower</text>
+  </g>
+</svg>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#1e1e2e" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#cdd6f4" text-anchor="middle" font-weight="bold">The Complete Email Journey</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" fill="#cdd6f4" text-anchor="middle">From Sender to Recipient</text>
+  
+  <!-- Sender Side -->
+  <g id="sender-side">
+    <!-- User -->
+    <circle cx="100" cy="150" r="30" fill="#45475a" stroke="#89b4fa" stroke-width="2"/>
+    <text x="100" y="155" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">Sender</text>
+    
+    <!-- Email Client -->
+    <rect x="50" y="220" width="100" height="60" fill="#45475a" stroke="#89b4fa" stroke-width="2" rx="5" ry="5"/>
+    <text x="100" y="250" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">Email Client</text>
+    <text x="100" y="270" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">(Gmail, Outlook)</text>
+    
+    <!-- SMTP Server -->
+    <rect x="200" y="220" width="100" height="60" fill="#45475a" stroke="#89b4fa" stroke-width="2" rx="5" ry="5"/>
+    <text x="250" y="250" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">SMTP Server</text>
+    <text x="250" y="270" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">(Outgoing Mail)</text>
+  </g>
+  
+  <!-- Middle/DNS Section -->
+  <g id="dns-section">
+    <!-- DNS Server -->
+    <ellipse cx="400" cy="150" rx="70" ry="50" fill="#45475a" stroke="#89b4fa" stroke-width="2"/>
+    <text x="400" y="145" font-family="Arial, sans-serif" font-size="16" fill="#cdd6f4" text-anchor="middle">DNS</text>
+    <text x="400" y="165" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Domain Name System</text>
+    
+    <!-- MX Records Box -->
+    <rect x="350" y="220" width="100" height="60" fill="#45475a" stroke="#89b4fa" stroke-width="2" rx="5" ry="5"/>
+    <text x="400" y="245" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">MX Records</text>
+    <text x="400" y="265" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Mail Exchange</text>
+  </g>
+  
+  <!-- Recipient Side -->
+  <g id="recipient-side">
+    <!-- Recipient Mail Server -->
+    <rect x="500" y="220" width="100" height="60" fill="#45475a" stroke="#89b4fa" stroke-width="2" rx="5" ry="5"/>
+    <text x="550" y="245" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">Recipient</text>
+    <text x="550" y="265" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Mail Server</text>
+    
+    <!-- Recipient Email Client -->
+    <rect x="650" y="220" width="100" height="60" fill="#45475a" stroke="#89b4fa" stroke-width="2" rx="5" ry="5"/>
+    <text x="700" y="250" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">Email Client</text>
+    <text x="700" y="270" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">(IMAP/POP3)</text>
+    
+    <!-- Recipient -->
+    <circle cx="700" cy="150" r="30" fill="#45475a" stroke="#89b4fa" stroke-width="2"/>
+    <text x="700" y="155" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">Recipient</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <!-- User to Email Client -->
+  <line x1="100" y1="180" x2="100" y2="220" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="100,220 95,210 105,210" fill="#f5c2e7"/>
+  
+  <!-- Email Client to SMTP Server -->
+  <line x1="150" y1="250" x2="200" y2="250" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="200,250 190,245 190,255" fill="#f5c2e7"/>
+  <text x="175" y="240" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">1</text>
+  
+  <!-- SMTP Server to DNS -->
+  <line x1="250" y1="220" x2="350" y2="170" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="350,170 340,175 345,165" fill="#f5c2e7"/>
+  <text x="300" y="185" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">2</text>
+  
+  <!-- DNS to MX Records -->
+  <line x1="400" y1="200" x2="400" y2="220" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="400,220 395,210 405,210" fill="#f5c2e7"/>
+  <text x="410" y="210" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">3</text>
+  
+  <!-- MX Records to SMTP Server -->
+  <line x1="350" y1="250" x2="300" y2="250" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="300,250 310,245 310,255" fill="#f5c2e7"/>
+  <text x="325" y="240" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">4</text>
+  
+  <!-- SMTP Server to Recipient Mail Server -->
+  <line x1="300" y1="250" x2="500" y2="250" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="500,250 490,245 490,255" fill="#f5c2e7"/>
+  <text x="400" y="240" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">5</text>
+  
+  <!-- Recipient Mail Server to Recipient Email Client -->
+  <line x1="600" y1="250" x2="650" y2="250" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="650,250 640,245 640,255" fill="#f5c2e7"/>
+  <text x="625" y="240" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">6</text>
+  
+  <!-- Recipient Email Client to Recipient -->
+  <line x1="700" y1="220" x2="700" y2="180" stroke="#f5c2e7" stroke-width="2"/>
+  <polygon points="700,180 695,190 705,190" fill="#f5c2e7"/>
+  <text x="710" y="200" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">7</text>
+  
+  <!-- Email Message Icon -->
+  <g id="email-icon">
+    <rect x="380" y="320" width="40" height="30" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="2" ry="2"/>
+    <path d="M 380,320 L 400,335 L 420,320" stroke="#89b4fa" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Process Steps -->
+  <g id="process-steps">
+    <rect x="50" y="380" width="700" height="100" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    
+    <text x="60" y="400" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="start" font-weight="bold">Email Journey Steps:</text>
+    
+    <text x="60" y="425" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">1. User composes email and clicks "Send" - Email client connects to SMTP server</text>
+    <text x="60" y="445" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">2. SMTP server performs DNS lookup to find recipient's mail server</text>
+    <text x="60" y="465" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">3. DNS returns MX records for the recipient's domain</text>
+    <text x="400" y="425" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">4. MX records tell SMTP server where to send the email</text>
+    <text x="400" y="445" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">5. SMTP server delivers email to recipient's mail server</text>
+    <text x="400" y="465" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">6. Recipient checks email via IMAP/POP3 client</text>
+    <text x="400" y="485" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">7. Email is displayed to recipient</text>
+  </g>
+  
+  <!-- Authentication Elements -->
+  <g id="authentication">
+    <rect x="200" y="300" width="100" height="40" fill="#45475a" stroke="#f9e2af" stroke-width="2" rx="5" ry="5" stroke-dasharray="5,2"/>
+    <text x="250" y="325" font-family="Arial, sans-serif" font-size="12" fill="#f9e2af" text-anchor="middle">SPF Check</text>
+    
+    <rect x="500" y="300" width="100" height="40" fill="#45475a" stroke="#f9e2af" stroke-width="2" rx="5" ry="5" stroke-dasharray="5,2"/>
+    <text x="550" y="325" font-family="Arial, sans-serif" font-size="12" fill="#f9e2af" text-anchor="middle">DKIM Verification</text>
+    
+    <!-- Authentication Lines -->
+    <line x1="250" y1="280" x2="250" y2="300" stroke="#f9e2af" stroke-width="1" stroke-dasharray="5,2"/>
+    <line x1="550" y1="280" x2="550" y2="300" stroke="#f9e2af" stroke-width="1" stroke-dasharray="5,2"/>
+  </g>
+</svg>

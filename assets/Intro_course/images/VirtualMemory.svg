@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#1e1e2e" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#cdd6f4" text-anchor="middle" font-weight="bold">Virtual Memory</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" fill="#cdd6f4" text-anchor="middle">How the Operating System Extends RAM Using Disk Space</text>
+  
+  <!-- RAM Section -->
+  <g id="ram-section">
+    <rect x="100" y="100" width="250" height="200" fill="#45475a" stroke="#a6e3a1" stroke-width="3" rx="5" ry="5"/>
+    <text x="225" y="125" font-family="Arial, sans-serif" font-size="18" fill="#a6e3a1" text-anchor="middle" font-weight="bold">Physical RAM</text>
+    
+    <!-- RAM Blocks -->
+    <rect x="120" y="140" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="145" y="160" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">OS Kernel</text>
+    
+    <rect x="120" y="180" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="145" y="200" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program A</text>
+    
+    <rect x="120" y="220" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="145" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program B</text>
+    
+    <rect x="180" y="140" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="205" y="160" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Drivers</text>
+    
+    <rect x="180" y="180" width="50" height="30" fill="#f38ba8" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="205" y="200" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program C</text>
+    
+    <rect x="180" y="220" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="205" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program D</text>
+    
+    <rect x="240" y="140" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="265" y="160" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">System</text>
+    
+    <rect x="240" y="180" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="265" y="200" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program E</text>
+    
+    <rect x="240" y="220" width="50" height="30" fill="#f38ba8" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="265" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program F</text>
+    
+    <rect x="120" y="260" width="170" height="20" fill="#313244" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="205" y="274" font-family="Arial, sans-serif" font-size="10" fill="#cdd6f4" text-anchor="middle">8GB Physical Memory</text>
+  </g>
+  
+  <!-- Virtual Memory Section -->
+  <g id="virtual-memory">
+    <rect x="450" y="100" width="250" height="200" fill="#45475a" stroke="#cba6f7" stroke-width="3" rx="5" ry="5"/>
+    <text x="575" y="125" font-family="Arial, sans-serif" font-size="18" fill="#cba6f7" text-anchor="middle" font-weight="bold">Virtual Memory</text>
+    
+    <!-- Virtual Memory Blocks -->
+    <rect x="470" y="140" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="495" y="160" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">OS Kernel</text>
+    
+    <rect x="470" y="180" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="495" y="200" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program A</text>
+    
+    <rect x="470" y="220" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="495" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program B</text>
+    
+    <rect x="530" y="140" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="555" y="160" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Drivers</text>
+    
+    <rect x="530" y="180" width="50" height="30" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1" stroke-dasharray="3,1"/>
+    <text x="555" y="200" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program C</text>
+    
+    <rect x="530" y="220" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="555" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program D</text>
+    
+    <rect x="590" y="140" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="615" y="160" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">System</text>
+    
+    <rect x="590" y="180" width="50" height="30" fill="#a6e3a1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="615" y="200" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program E</text>
+    
+    <rect x="590" y="220" width="50" height="30" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1" stroke-dasharray="3,1"/>
+    <text x="615" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1e1e2e" text-anchor="middle">Program F</text>
+    
+    <rect x="470" y="260" width="170" height="20" fill="#313244" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="555" y="274" font-family="Arial, sans-serif" font-size="10" fill="#cdd6f4" text-anchor="middle">16GB Virtual Memory (8GB RAM + 8GB Page File)</text>
+  </g>
+  
+  <!-- Hard Drive -->
+  <g id="hard-drive">
+    <rect x="300" y="320" width="200" height="60" fill="#45475a" stroke="#89b4fa" stroke-width="2" rx="5" ry="5"/>
+    <text x="400" y="345" font-family="Arial, sans-serif" font-size="16" fill="#89b4fa" text-anchor="middle" font-weight="bold">Storage (SSD/HDD)</text>
+    <text x="400" y="365" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Page File / Swap Space</text>
+    
+    <!-- Page File Blocks -->
+    <rect x="320" y="330" width="20" height="15" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1"/>
+    <rect x="350" y="330" width="20" height="15" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1"/>
+    <rect x="380" y="330" width="20" height="15" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1"/>
+    <rect x="410" y="330" width="20" height="15" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1"/>
+    <rect x="440" y="330" width="20" height="15" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1"/>
+    <rect x="470" y="330" width="20" height="15" fill="#cba6f7" stroke="#cdd6f4" stroke-width="1"/>
+  </g>
+  
+  <!-- Arrows -->
+  <g id="arrows">
+    <!-- Paging Out -->
+    <path d="M 200,195 C 250,195 250,340 320,340" stroke="#f38ba8" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="230" y="180" font-family="Arial, sans-serif" font-size="12" fill="#f38ba8" text-anchor="middle">Paging Out</text>
+    
+    <!-- Paging In -->
+    <path d="M 470,340 C 520,340 520,195 590,195" stroke="#a6e3a1" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="520" y="320" font-family="Arial, sans-serif" font-size="12" fill="#a6e3a1" text-anchor="middle">Paging In</text>
+  </g>
+  
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cdd6f4"/>
+    </marker>
+  </defs>
+  
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="50" y="320" width="200" height="60" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    
+    <rect x="60" y="330" width="15" height="10" fill="#a6e3a1"/>
+    <text x="85" y="338" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">Active in RAM</text>
+    
+    <rect x="60" y="350" width="15" height="10" fill="#f38ba8"/>
+    <text x="85" y="358" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">Being Paged Out</text>
+    
+    <rect x="60" y="370" width="15" height="10" fill="#cba6f7" stroke-dasharray="3,1" stroke="#cdd6f4" stroke-width="1"/>
+    <text x="85" y="378" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">Paged to Disk</text>
+  </g>
+  
+  <!-- Explanation -->
+  <g id="explanation">
+    <rect x="550" y="320" width="200" height="60" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    <text x="560" y="335" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">Virtual Memory allows:</text>
+    <text x="560" y="355" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">• Running more programs than fit in RAM</text>
+    <text x="560" y="375" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="start">• Moving inactive data to disk</text>
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#1e1e2e" rx="10" ry="10"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" fill="#cdd6f4" text-anchor="middle" font-weight="bold">The CPU Instruction Cycle</text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="16" fill="#cdd6f4" text-anchor="middle">Fetch-Decode-Execute-Store</text>
+  
+  <!-- Main Cycle Circle -->
+  <circle cx="400" cy="250" r="180" fill="none" stroke="#89b4fa" stroke-width="3" stroke-dasharray="8,4"/>
+  
+  <!-- Cycle Stages -->
+  <!-- Fetch -->
+  <circle cx="400" cy="100" r="60" fill="#45475a" stroke="#f38ba8" stroke-width="2"/>
+  <text x="400" y="90" font-family="Arial, sans-serif" font-size="20" fill="#f38ba8" text-anchor="middle" font-weight="bold">FETCH</text>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Get instruction from memory</text>
+  
+  <!-- Decode -->
+  <circle cx="580" cy="250" r="60" fill="#45475a" stroke="#f9e2af" stroke-width="2"/>
+  <text x="580" y="240" font-family="Arial, sans-serif" font-size="20" fill="#f9e2af" text-anchor="middle" font-weight="bold">DECODE</text>
+  <text x="580" y="265" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Interpret instruction</text>
+  
+  <!-- Execute -->
+  <circle cx="400" cy="400" r="60" fill="#45475a" stroke="#a6e3a1" stroke-width="2"/>
+  <text x="400" y="390" font-family="Arial, sans-serif" font-size="20" fill="#a6e3a1" text-anchor="middle" font-weight="bold">EXECUTE</text>
+  <text x="400" y="415" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Perform operation</text>
+  
+  <!-- Store -->
+  <circle cx="220" cy="250" r="60" fill="#45475a" stroke="#cba6f7" stroke-width="2"/>
+  <text x="220" y="240" font-family="Arial, sans-serif" font-size="20" fill="#cba6f7" text-anchor="middle" font-weight="bold">STORE</text>
+  <text x="220" y="265" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">Write results back</text>
+  
+  <!-- Arrows connecting stages -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#cdd6f4"/>
+    </marker>
+  </defs>
+  
+  <!-- Fetch to Decode -->
+  <path d="M 450,130 Q 520,150 550,200" stroke="#cdd6f4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Decode to Execute -->
+  <path d="M 550,300 Q 520,350 450,370" stroke="#cdd6f4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Execute to Store -->
+  <path d="M 350,370 Q 280,350 250,300" stroke="#cdd6f4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Store to Fetch -->
+  <path d="M 250,200 Q 280,150 350,130" stroke="#cdd6f4" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Detailed descriptions -->
+  <g id="fetch-details">
+    <rect x="50" y="100" width="140" height="100" fill="#313244" stroke="#f38ba8" stroke-width="1" rx="5" ry="5"/>
+    <text x="120" y="120" font-family="Arial, sans-serif" font-size="14" fill="#f38ba8" text-anchor="middle" font-weight="bold">Fetch Stage</text>
+    <text x="120" y="140" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">1. Get instruction from</text>
+    <text x="120" y="155" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">memory address in</text>
+    <text x="120" y="170" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">instruction pointer</text>
+    <text x="120" y="185" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">2. Place in instruction</text>
+    <text x="120" y="200" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">register</text>
+  </g>
+  
+  <g id="decode-details">
+    <rect x="610" y="200" width="140" height="100" fill="#313244" stroke="#f9e2af" stroke-width="1" rx="5" ry="5"/>
+    <text x="680" y="220" font-family="Arial, sans-serif" font-size="14" fill="#f9e2af" text-anchor="middle" font-weight="bold">Decode Stage</text>
+    <text x="680" y="240" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">1. Interpret instruction</text>
+    <text x="680" y="255" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">2. Determine required</text>
+    <text x="680" y="270" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">operations</text>
+    <text x="680" y="285" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">3. Place data in A and B</text>
+    <text x="680" y="300" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">registers</text>
+  </g>
+  
+  <g id="execute-details">
+    <rect x="50" y="300" width="140" height="100" fill="#313244" stroke="#a6e3a1" stroke-width="1" rx="5" ry="5"/>
+    <text x="120" y="320" font-family="Arial, sans-serif" font-size="14" fill="#a6e3a1" text-anchor="middle" font-weight="bold">Execute Stage</text>
+    <text x="120" y="340" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">1. ALU performs the</text>
+    <text x="120" y="355" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">operation using A and B</text>
+    <text x="120" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">registers</text>
+    <text x="120" y="385" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">2. Result placed in</text>
+    <text x="120" y="400" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">accumulator</text>
+  </g>
+  
+  <g id="store-details">
+    <rect x="610" y="300" width="140" height="100" fill="#313244" stroke="#cba6f7" stroke-width="1" rx="5" ry="5"/>
+    <text x="680" y="320" font-family="Arial, sans-serif" font-size="14" fill="#cba6f7" text-anchor="middle" font-weight="bold">Store Stage</text>
+    <text x="680" y="340" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">1. Write results to</text>
+    <text x="680" y="355" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">memory or register</text>
+    <text x="680" y="370" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">2. Update instruction</text>
+    <text x="680" y="385" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">pointer to next</text>
+    <text x="680" y="400" font-family="Arial, sans-serif" font-size="12" fill="#cdd6f4" text-anchor="middle">instruction</text>
+  </g>
+  
+  <!-- Overlapping Instruction Cycles -->
+  <g id="overlapping-cycles">
+    <rect x="200" y="450" width="400" height="40" fill="#313244" stroke="#89b4fa" stroke-width="1" rx="5" ry="5"/>
+    <text x="400" y="475" font-family="Arial, sans-serif" font-size="14" fill="#cdd6f4" text-anchor="middle">Modern CPUs overlap these stages for better performance</text>
+  </g>
+</svg>

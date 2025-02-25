@@ -14,6 +14,7 @@
          {% if include.poster %}poster="{{ include.poster | relative_url }}"{% endif %}
          {% if include.autoplay %}autoplay{% endif %}
          {% if include.controls != false %}controls{% endif %}
+         loop
          playsinline>
     <source src="{{ include.path | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
