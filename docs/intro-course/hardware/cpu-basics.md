@@ -433,7 +433,7 @@ Modern implementations include:
 - Memory stacked on or very close to the processor
 - Multiple compute layers stacked together
 
-{% include figure.html path="assets/Intro_course/images/CPU/Figure2.png" class="img-fluid" alt="3D Stacking Diagram" caption="Simplified representation of 3D stacking in modern processors" %}
+{% include figure.html path="assets/Intro_course/images/Fig01_AMD_3D_V-Cache.webp" class="img-fluid" alt="3D Stacking Diagram" caption="Simplified representation of 3D stacking in modern processors" %}
 
 ### Alternative Computing Paradigms
 
